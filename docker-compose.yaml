@@ -1,7 +1,7 @@
 services:
   grafana:
     user: root
-    container_name: 'veeamsoftware-performanceregression-panel'
+    container_name: 'perf-regression-panel'
 
     build:
       context: ./.config
@@ -12,13 +12,13 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ./dist:/var/lib/grafana/plugins/veeamsoftware-performanceregression-panel
+      - ./dist:/var/lib/grafana/plugins/perf-regression-panel
       - ./provisioning:/etc/grafana/provisioning
-      - .:/root/veeamsoftware-performanceregression-panel
+      - .:/root/perf-regression-panel
 
     environment:
       NODE_ENV: development
-      GF_LOG_FILTERS: plugin.veeamsoftware-performanceregression-panel:debug
+      GF_LOG_FILTERS: plugin.perf-regression-panel-panel:debug
       GF_LOG_LEVEL: debug
       GF_DATAPROXY_LOGGING: 1
-      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: veeamsoftware-performanceregression-panel
+      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: perf-regression-panel-panel

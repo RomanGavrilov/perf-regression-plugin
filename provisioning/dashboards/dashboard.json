@@ -50,7 +50,7 @@
         }
       ],
       "title": "Panel Title",
-      "type": "veeamsoftware-performanceregression-panel"
+      "type": "perf-regression-panel"
     },
     {
       "datasource": {
@@ -81,7 +81,7 @@
         }
       ],
       "title": "Panel Title",
-      "type": "veeamsoftware-performanceregression-panel"
+      "type": "perf-regression-panel"
     }
   ],
   "refresh": "",

@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "Performance-Regression-Panel",
-  "id": "veeamsoftware-performanceregression-panel",
+  "id": "perf-regression-panel",
   "info": {
     "keywords": ["panel"],
     "description": "",
     "author": {
-      "name": "Veeam software"
+      "name": "Roman Gavrilov"
     },
     "logos": {
       "small": "img/logo.svg",
